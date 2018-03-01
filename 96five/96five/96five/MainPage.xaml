@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:_96five"
+             x:Class="_96five.MainPage">
+    <ScrollView>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="150"/>
+            </Grid.RowDefinitions>
+            <Image Source="listen_now.png" Grid.Row="0"></Image>
+            <Button Text="Listen Now" Grid.Row="0" BackgroundColor="Transparent"/>
+            <Image Source="song_finder.png" Grid.Row="1"></Image>
+            <Button Text="Song Finder" Grid.Row="1" BackgroundColor="Transparent"/>
+            <Image Source="podcasts.png" Grid.Row="2"></Image>
+            <Button Text="Podcasts" Grid.Row="2" BackgroundColor="Transparent"/>
+            <Image Source="social_media.png" Grid.Row="3"></Image>
+            <Button Text="Social Media" Grid.Row="3" BackgroundColor="Transparent"/>
+            <Image Source="whats_on.png" Grid.Row="4"></Image>
+            <Button Text="What's On" Grid.Row="4" BackgroundColor="Transparent"/>
+            <Image Source="program_guide.png" Grid.Row="5"></Image>
+            <Button Text="Program Guide" Grid.Row="5" BackgroundColor="Transparent"/>
+            <Image Source="exploring_faith.png" Grid.Row="6"></Image>
+            <Button Text="Exploring Faith" Grid.Row="6" BackgroundColor="Transparent"/>
+            <Image Source="donations.png" Grid.Row="7"></Image>
+            <Button Text="Donations" Grid.Row="7" BackgroundColor="Transparent"/>
+        </Grid>
+    </ScrollView>
+
+
+</ContentPage>

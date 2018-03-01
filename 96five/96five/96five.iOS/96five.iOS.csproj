@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{616A1E50-C7B9-4555-9504-495D1F122C34}</ProjectGuid>
+    <ProjectGuid>{A7FF74C6-8E51-4F51-9775-BAC09FB2D737}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
     <RootNamespace>_96five.iOS</RootNamespace>
@@ -121,38 +121,35 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.122203" />
   </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\tab_about.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\tab_about%402x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\tab_about%403x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\tab_feed.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\tab_feed%402x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\tab_feed%403x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\xamarin_logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\xamarin_logo%402x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\xamarin_logo%403x.png" />
-  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\_96five\_96five.csproj">
-      <Project>{F8984839-380B-4E5F-B794-5426BB951E01}</Project>
+      <Project>{9152A521-6C6D-420F-A9D5-65946212BFFF}</Project>
       <Name>_96five</Name>
     </ProjectReference>
   </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <BundleResource Include="Resources\listen_now.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\donations.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\exploring_faith.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\podcasts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\program_guide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\social_media.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\song_finder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\whats_on.png" />
+  </ItemGroup>
 </Project>

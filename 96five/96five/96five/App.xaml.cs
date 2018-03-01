@@ -1,20 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
-using _96five.Views;
 using Xamarin.Forms;
 
 namespace _96five
 {
 	public partial class App : Application
 	{
-
 		public App ()
 		{
 			InitializeComponent();
 
-
-            MainPage = new MainPage();
-        }
+			MainPage = new _96five.MainPage();
+		}
 
 		protected override void OnStart ()
 		{
