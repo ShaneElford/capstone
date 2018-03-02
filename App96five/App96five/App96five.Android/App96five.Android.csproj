@@ -80,12 +80,6 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\App96five\App96five.csproj">
-      <Project>{5049D369-E95B-4B74-9B06-9077A84BD95B}</Project>
-      <Name>App96five</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\whats_on.png" />
   </ItemGroup>
   <ItemGroup>
@@ -108,6 +102,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\song_finder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\App96five\App96five.csproj">
+      <Project>{531398c8-7f95-4db1-8966-896ea54adb0a}</Project>
+      <Name>App96five</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
