@@ -7,14 +7,14 @@
     <ScrollView>
         <Grid RowSpacing="0">
             <Grid.RowDefinitions>
-                <RowDefinition Height="100"/>
-                <RowDefinition Height="100"/>
-                <RowDefinition Height="100"/>
-                <RowDefinition Height="100"/>
-                <RowDefinition Height="100"/>
-                <RowDefinition Height="100"/>
-                <RowDefinition Height="100"/>
-                <RowDefinition Height="100"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Image  Source="listen_now.png"
                     Grid.Row="0"
