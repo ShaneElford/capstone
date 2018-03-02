@@ -18,10 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="MasterDetailPage1.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="MasterDetailPage1Master.xaml">
+    <EmbeddedResource Update="ListenNow.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

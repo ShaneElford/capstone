@@ -5,7 +5,7 @@ using System.Text;
 
 using Xamarin.Forms;
 
-namespace _96five
+namespace App96five
 {
 	public partial class App : Application
 	{
@@ -13,7 +13,7 @@ namespace _96five
 		{
 			InitializeComponent();
 
-			MainPage = new _96five.MainPage();
+			MainPage = new App96five.MainPage();
 		}
 
 		protected override void OnStart ()

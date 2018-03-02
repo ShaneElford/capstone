@@ -5,12 +5,12 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{A7FF74C6-8E51-4F51-9775-BAC09FB2D737}</ProjectGuid>
+    <ProjectGuid>{2F066DC4-98F7-47A1-8324-7028FD2F81D1}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_96five.iOS</RootNamespace>
+    <RootNamespace>App96five.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>96five.iOS</AssemblyName>
+    <AssemblyName>App96five.iOS</AssemblyName>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -123,19 +123,19 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\_96five\_96five.csproj">
-      <Project>{9152A521-6C6D-420F-A9D5-65946212BFFF}</Project>
-      <Name>_96five</Name>
+    <ProjectReference Include="..\App96five\App96five.csproj">
+      <Project>{5049D369-E95B-4B74-9B06-9077A84BD95B}</Project>
+      <Name>App96five</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\listen_now.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\donations.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\exploring_faith.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\listen_now.png" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\podcasts.png" />

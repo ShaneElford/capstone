@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:_96five"
-             x:Class="_96five.MainPage">
+             xmlns:local="clr-namespace:App96five"
+             x:Class="App96five.MainPage">
+
     <ScrollView>
         <Grid RowSpacing="0">
             <Grid.RowDefinitions>
@@ -137,6 +138,5 @@
                     FontSize="22" />
         </Grid>
     </ScrollView>
-
 
 </ContentPage>
