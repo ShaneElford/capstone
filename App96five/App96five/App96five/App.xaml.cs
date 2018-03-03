@@ -13,7 +13,7 @@ namespace App96five
 		{
 			InitializeComponent();
 
-			MainPage = new App96five.MainPage();
+			MainPage = new NavigationPage (new App96five.MainPage());
 		}
 
 		protected override void OnStart ()
