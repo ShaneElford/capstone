@@ -12,45 +12,46 @@ namespace App96five
         public MainPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
         async void GoToListenNow(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ListenNow());
+            await Navigation.PushAsync(new ListenNow { Title = "Listen Now" });
         }
 
         async void GoToSongFinder(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new SongFinder());
+            await Navigation.PushAsync(new SongFinder { Title = "Song Finder" });
         }
 
         async void GoToPodcasts(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Podcasts());
+            await Navigation.PushAsync(new Podcasts { Title = "Podcasts" });
         }
 
         async void GoToSocialMedia(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new SocialMedia());
+            await Navigation.PushAsync(new SocialMedia { Title = "Social Media" });
         }
 
         async void GoToWhatsOn(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new WhatsOn());
+            await Navigation.PushAsync(new WhatsOn { Title = "What's On" });
         }
 
         async void GoToProgramGuide(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ProgramGuide());
+            await Navigation.PushAsync(new ProgramGuide { Title = "Program Guide" });
         }
 
         async void GoToExploringFaith(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ExploringFaith());
+            await Navigation.PushAsync(new ExploringFaith { Title = "Exploring Faith" });
         }
 
         async void GoToDonations(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Donations());
+            await Navigation.PushAsync(new Donations { Title = "Donations" });
         }
 
         async void OnPreviousPageButtonClicked(object sender, EventArgs e)

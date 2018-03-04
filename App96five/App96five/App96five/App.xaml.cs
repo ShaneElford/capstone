@@ -9,12 +9,13 @@ namespace App96five
 {
 	public partial class App : Application
 	{
-		public App ()
-		{
-			InitializeComponent();
+        public App()
+        {
+            InitializeComponent();
+            
+            MainPage = new NavigationPage(new App96five.MainPage());
 
-			MainPage = new NavigationPage (new App96five.MainPage());
-		}
+        }
 
 		protected override void OnStart ()
 		{
