@@ -7,6 +7,12 @@
             <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Button Text="96Five"
+                    Clicked="Play96Five"/>
+            <Button Text="Inspire Digital"
+                    Clicked="PlayInspire"/>
+            <Button Text="Fresh Radio"
+                    Clicked="PlayFresh"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
