@@ -32,5 +32,10 @@ namespace App96five
         {
             await CrossMediaManager.Current.Play("http://stream2.cnmns.net/fresh-mp3");
         }
+
+        async void Stop()
+        {
+            await CrossMediaManager.Current.Stop();
+        }
     }
 }

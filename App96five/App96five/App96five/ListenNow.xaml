@@ -4,15 +4,64 @@
              x:Class="App96five.ListenNow">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Button Text="96Five"
-                    Clicked="Play96Five"/>
-            <Button Text="Inspire Digital"
-                    Clicked="PlayInspire"/>
-            <Button Text="Fresh Radio"
-                    Clicked="PlayFresh"/>
+            <Grid>
+                    <Label Text="96five"
+                       HorizontalOptions="FillAndExpand"
+                       BackgroundColor="PaleGoldenrod"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="4"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"/>
+                    <Button Text=">"
+                        HorizontalOptions="CenterAndExpand"
+                        Grid.Column="4"
+                        Clicked="Play96Five"/>
+                </Grid>
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="CenterAndExpand">
+                <BoxView    Color="Black"
+                            WidthRequest="100"
+                            HeightRequest="100"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center"/>
+                <StackLayout HorizontalOptions="CenterAndExpand">
+                    <Label Text="Viva La Vida"
+                       FontSize="Medium"/>
+                    <Label  Text="Coldplay"
+                        FontSize="Small"/>
+                </StackLayout>
+            </StackLayout>
+
+
+            <Grid>
+                <Label Text="Inspire Digital"
+                       HorizontalOptions="FillAndExpand"
+                       BackgroundColor="PaleVioletRed"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="4"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"/>
+                <Button Text=">"
+                        HorizontalOptions="CenterAndExpand"
+                        Grid.Column="4"
+                        Clicked="PlayInspire"/>
+            </Grid>
+            
+            <Grid>
+                <Label Text="Fresh Radio"
+                       HorizontalOptions="FillAndExpand"
+                       BackgroundColor="PaleTurquoise"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="4"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"/>
+                <Button Text=">"
+                        HorizontalOptions="CenterAndExpand"
+                        Grid.Column="4"
+                        Clicked="PlayFresh"/>
+            </Grid>
+            <Button Text="Stop"
+                    Clicked="Stop"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
