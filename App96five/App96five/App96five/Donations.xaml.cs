@@ -15,6 +15,13 @@ namespace App96five
 		public Donations ()
 		{
 			InitializeComponent ();
-		}
-	}
+            MyImage.Source = ImageSource.FromFile("96five.png");
+
+            
+        }
+	void Redict(object sender, EventArgs args)
+            {
+                Device.OpenUri(new Uri("http://96five.com/donate"));
+            }
+    }
 }

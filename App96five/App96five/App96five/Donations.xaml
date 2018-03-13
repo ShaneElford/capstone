@@ -1,12 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App96five.Donations">
+             x:Class="App96five.Donations"
+             BackgroundColor="#E6E6E6">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
+            <Image x:Name="MyImage" />
+            <Label Text="Thank you for helping contribute to 96five!"
                 HorizontalOptions="CenterAndExpand" />
+            <Button HeightRequest ="80" WidthRequest ="160" BackgroundColor="Maroon" TextColor="White" FontSize="Large" Text="Donate" Clicked="Redict">
+             
+            </Button>
+           
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
