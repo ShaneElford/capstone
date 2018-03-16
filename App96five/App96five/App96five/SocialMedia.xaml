@@ -7,6 +7,9 @@
             <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Button HeightRequest ="80" WidthRequest ="160" BackgroundColor="Maroon" TextColor="White" FontSize="Large" Text="Facebook" Clicked="GoToFacebook"/>
+
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

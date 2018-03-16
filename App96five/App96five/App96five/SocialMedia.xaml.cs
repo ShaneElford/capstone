@@ -16,5 +16,10 @@ namespace App96five
 		{
 			InitializeComponent ();
 		}
-	}
+
+        void GoToFacebook(object sender, EventArgs args)
+        {
+            Device.OpenUri(new Uri("fb://page/122991994390985"));
+        }
+    }
 }
