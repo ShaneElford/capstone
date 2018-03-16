@@ -155,4 +155,7 @@
   <ItemGroup>
     <BundleResource Include="Resources\whats_on.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\96five.png" />
+  </ItemGroup>
 </Project>
