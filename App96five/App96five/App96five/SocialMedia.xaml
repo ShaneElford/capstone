@@ -4,10 +4,10 @@
              x:Class="App96five.SocialMedia">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Button HeightRequest ="80" WidthRequest ="160" BackgroundColor="Maroon" TextColor="White" FontSize="Large" Text="Facebook" Clicked="GoToFacebook"/>
+            <Button BackgroundColor="Maroon" TextColor="White" FontSize="Large" Text="Facebook" Clicked="GoToFacebook"/>
+            <Button Text="Instagram" Clicked="GoToInstagram"/>
+            <Button Text="Twitter" Clicked="GoToTwitter"/>
+            <Button Text="YouTube" Clicked="GoToYoutube"/>
 
 
         </StackLayout>

@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App96five.Android", "App96f
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App96five.iOS", "App96five\App96five.iOS\App96five.iOS.csproj", "{2F066DC4-98F7-47A1-8324-7028FD2F81D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App96five", "App96five\App96five\App96five.csproj", "{531398C8-7F95-4DB1-8966-896EA54ADB0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App96five", "App96five\App96five\App96five.csproj", "{531398C8-7F95-4DB1-8966-896EA54ADB0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
