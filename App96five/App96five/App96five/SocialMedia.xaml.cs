@@ -9,14 +9,14 @@ using Xamarin.Forms.Xaml;
 
 namespace App96five
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
+    [XamlCompilation(XamlCompilationOptions.Compile)]
 
-	public partial class SocialMedia : ContentPage
-	{
-		public SocialMedia ()
-		{
-			InitializeComponent ();
-		}
+    public partial class SocialMedia : ContentPage
+    {
+        public SocialMedia()
+        {
+            InitializeComponent();
+        }
 
         void GoToFacebook(object sender, EventArgs e)
         {
@@ -62,5 +62,16 @@ namespace App96five
                 Device.OpenUri(new Uri("https://www.youtube.com/channel/UCKPR63G0OnP-zi6ZswXXB1w"));
             }
         }
+
+        void Call(object sender, EventArgs e)
+        {
+            Device.OpenUri(new Uri("tel:0735520965"));
+        }
+
+        void Email(object sender, EventArgs e)
+        {
+            Device.OpenUri(new Uri("mailto:email@email.com"));
+        }
+
     }
 }

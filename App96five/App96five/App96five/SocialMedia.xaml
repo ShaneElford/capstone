@@ -4,36 +4,44 @@
              x:Class="App96five.SocialMedia">
     <ContentPage.Content>
         <StackLayout>
-            <Image  Source="facebook.png">
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer
+            <StackLayout Orientation="Horizontal">
+                <Image  Source="facebook.png">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
                             Tapped="GoToFacebook"
                             NumberOfTapsRequired="1"/>
-                </Image.GestureRecognizers>
-            </Image>
-            <Image  Source="twitter.png">
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image  Source="twitter.png">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
                             Tapped="GoToTwitter"
                             NumberOfTapsRequired="1"/>
-                </Image.GestureRecognizers>
-            </Image>
-            <Image  Source="instagram.png">
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Image  Source="instagram.png">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
                             Tapped="GoToInstagram"
                             NumberOfTapsRequired="1"/>
-                </Image.GestureRecognizers>
-            </Image>
-            <Image  Source="youtube.png">
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer
-                            Tapped="GoToYoutube"
-                            NumberOfTapsRequired="1"/>
-                </Image.GestureRecognizers>
-            </Image>
-
-
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image  Source="youtube.png">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                                Tapped="GoToYoutube"
+                                NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Call"
+                        Clicked="Call"/>
+                <Button Text="Email"
+                        Clicked="Email"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

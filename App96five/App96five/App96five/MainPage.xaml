@@ -4,29 +4,17 @@
              xmlns:local="clr-namespace:App96five"
              x:Class="App96five.MainPage">
     <ScrollView Margin="0" Padding="0">
-        <Grid RowSpacing="0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
+        <StackLayout Margin="0" Padding="0">
             <Image  Source="listen_now.png"
-                    Grid.Row="0"
-                    HorizontalOptions="FillAndExpand"
-                    VerticalOptions="FillAndExpand">
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer
-                            Tapped="GoToListenNow"
-                            NumberOfTapsRequired="1"/>
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
+                    Tapped="GoToListenNow"
+                    NumberOfTapsRequired="1"/>
                 </Image.GestureRecognizers>
             </Image>
             <Image  Source="song_finder.png"
-                    Grid.Row="1"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand">
                 <Image.GestureRecognizers>
@@ -36,7 +24,6 @@
                 </Image.GestureRecognizers>
             </Image>
             <Image  Source="podcasts.png"
-                    Grid.Row="2"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand">
                 <Image.GestureRecognizers>
@@ -46,7 +33,6 @@
                 </Image.GestureRecognizers>
             </Image>
             <Image  Source="social_media.png"
-                    Grid.Row="3"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand">
                 <Image.GestureRecognizers>
@@ -56,7 +42,6 @@
                 </Image.GestureRecognizers>
             </Image>
             <Image  Source="whats_on.png"
-                    Grid.Row="4"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand">
                 <Image.GestureRecognizers>
@@ -66,7 +51,6 @@
                 </Image.GestureRecognizers>
             </Image>
             <Image  Source="program_guide.png"
-                    Grid.Row="5"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand">
                 <Image.GestureRecognizers>
@@ -76,7 +60,6 @@
                 </Image.GestureRecognizers>
             </Image>
             <Image  Source="exploring_faith.png"
-                    Grid.Row="6"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand">
                 <Image.GestureRecognizers>
@@ -86,19 +69,17 @@
                 </Image.GestureRecognizers>
             </Image>
             <Image  Source="donations.png"
-                    Grid.Row="7"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand">
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer
                         Tapped="GoToDonations"
                         NumberOfTapsRequired="1"/>
-                </Image.GestureRecognizers>
-            </Image>
-            <Label Text="test"
-                   Grid.Row="8"/>
-        </Grid>
+            </Image.GestureRecognizers>
+        </Image>
+        </StackLayout>
     </ScrollView>
+
 
 
 </ContentPage>
