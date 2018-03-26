@@ -4,10 +4,34 @@
              x:Class="App96five.SocialMedia">
     <ContentPage.Content>
         <StackLayout>
-            <Button BackgroundColor="Maroon" TextColor="White" FontSize="Large" Text="Facebook" Clicked="GoToFacebook"/>
-            <Button Text="Instagram" Clicked="GoToInstagram"/>
-            <Button Text="Twitter" Clicked="GoToTwitter"/>
-            <Button Text="YouTube" Clicked="GoToYoutube"/>
+            <Image  Source="facebook.png">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                            Tapped="GoToFacebook"
+                            NumberOfTapsRequired="1"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Image  Source="twitter.png">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                            Tapped="GoToTwitter"
+                            NumberOfTapsRequired="1"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Image  Source="instagram.png">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                            Tapped="GoToInstagram"
+                            NumberOfTapsRequired="1"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Image  Source="youtube.png">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                            Tapped="GoToYoutube"
+                            NumberOfTapsRequired="1"/>
+                </Image.GestureRecognizers>
+            </Image>
 
 
         </StackLayout>

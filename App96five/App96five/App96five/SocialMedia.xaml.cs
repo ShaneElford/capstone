@@ -20,22 +20,47 @@ namespace App96five
 
         void GoToFacebook(object sender, EventArgs e)
         {
-            Device.OpenUri(new Uri("https://www.facebook.com/96five/"));
+            try
+            {
+                Device.OpenUri(new Uri("fb://page/122991994390985")); // launch app if present
+            }
+            catch (Exception)
+            {
+                Device.OpenUri(new Uri("https://www.facebook.com/96five/")); // else launch web browser
+            }
         }
-        //fb://page/122991994390985
         void GoToInstagram(object sender, EventArgs e)
         {
-            Device.OpenUri(new Uri("https://www.instagram.com/96five/?hl=en"));
+            try
+            {
+                Device.OpenUri(new Uri("instagram://user?username=1099802346")); // launch app if present
+            }
+            catch (Exception)
+            {
+                Device.OpenUri(new Uri("https://www.instagram.com/96five/?hl=en")); // else launch web browser
+            }
         }
-        //instagram://user?username=1099802346
         void GoToTwitter(object sender, EventArgs e)
         {
-            Device.OpenUri(new Uri("https://twitter.com/96five"));
+            try
+            {
+                Device.OpenUri(new Uri("twitter://user?user_id=80201377")); // launch app if present
+            }
+            catch (Exception)
+            {
+                Device.OpenUri(new Uri("https://twitter.com/96five")); // else launch web browser
+            }
         }
-//twitter://user?user_id=80201377
         void GoToYoutube(object sender, EventArgs e)
         {
-            Device.OpenUri(new Uri("https://www.youtube.com/channel/UCKPR63G0OnP-zi6ZswXXB1w"));
+            try
+            {
+                Device.OpenUri(new Uri("vdn.youtube://user/96five"));
+            }
+            catch (Exception)
+            {
+                Device.OpenUri(new Uri("https://www.youtube.com/channel/UCKPR63G0OnP-zi6ZswXXB1w"));
+            }
         }
     }
 }

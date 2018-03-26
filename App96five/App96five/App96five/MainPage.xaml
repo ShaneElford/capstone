@@ -19,131 +19,84 @@
                     Grid.Row="0"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand">
-            </Image>
-            <Label  Text="Listen Now"
-                    Grid.Row="0"
-                    HorizontalTextAlignment="Center"
-                    VerticalTextAlignment="Center"
-                    TextColor="White"
-                    FontSize="22">
-                <Label.GestureRecognizers>
+                <Image.GestureRecognizers>
                     <TapGestureRecognizer
                             Tapped="GoToListenNow"
                             NumberOfTapsRequired="1"/>
-                </Label.GestureRecognizers>
-            </Label>
+                </Image.GestureRecognizers>
+            </Image>
             <Image  Source="song_finder.png"
                     Grid.Row="1"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand">
-            </Image>
-            <Label  Text="Song Finder"
-                    Grid.Row="1"
-                    HorizontalTextAlignment="Center"
-                    VerticalTextAlignment="Center"
-                    TextColor="White"
-                    FontSize="22">
-                <Label.GestureRecognizers>
+                <Image.GestureRecognizers>
                     <TapGestureRecognizer
-                        Tapped="GoToSongFinder" />
-                </Label.GestureRecognizers>
-            </Label>
+                        Tapped="GoToSongFinder"
+                        NumberOfTapsRequired="1"/>
+                </Image.GestureRecognizers>
+            </Image>
             <Image  Source="podcasts.png"
                     Grid.Row="2"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand">
-            </Image>
-            <Label  Text="Podcasts"
-                    Grid.Row="2"
-                    HorizontalTextAlignment="Center"
-                    VerticalTextAlignment="Center"
-                    TextColor="White"
-                    FontSize="22">
-                <Label.GestureRecognizers>
+                <Image.GestureRecognizers>
                     <TapGestureRecognizer
-                        Tapped="GoToPodcasts" />
-                </Label.GestureRecognizers>
-            </Label>
+                        Tapped="GoToPodcasts"
+                        NumberOfTapsRequired="1"/>
+                </Image.GestureRecognizers>
+            </Image>
             <Image  Source="social_media.png"
                     Grid.Row="3"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand">
-            </Image>
-            <Label  Text="Social Media"
-                    Grid.Row="3"
-                    HorizontalTextAlignment="Center"
-                    VerticalTextAlignment="Center"
-                    TextColor="White"
-                    FontSize="22">
-                <Label.GestureRecognizers>
+                <Image.GestureRecognizers>
                     <TapGestureRecognizer
-                        Tapped="GoToSocialMedia" />
-                </Label.GestureRecognizers>
-            </Label>
+                        Tapped="GoToSocialMedia"
+                        NumberOfTapsRequired="1"/>
+                </Image.GestureRecognizers>
+            </Image>
             <Image  Source="whats_on.png"
                     Grid.Row="4"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand">
-            </Image>
-            <Label  Text="What's On"
-                    Grid.Row="4"
-                    HorizontalTextAlignment="Center"
-                    VerticalTextAlignment="Center"
-                    TextColor="White"
-                    FontSize="22">
-                <Label.GestureRecognizers>
+                <Image.GestureRecognizers>
                     <TapGestureRecognizer
-                        Tapped="GoToWhatsOn" />
-                </Label.GestureRecognizers>
-            </Label>
+                        Tapped="GoToWhatsOn"
+                        NumberOfTapsRequired="1"/>
+                </Image.GestureRecognizers>
+            </Image>
             <Image  Source="program_guide.png"
                     Grid.Row="5"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand">
-            </Image>
-            <Label  Text="Program Guide"
-                    Grid.Row="5"
-                    HorizontalTextAlignment="Center"
-                    VerticalTextAlignment="Center"
-                    TextColor="White"
-                    FontSize="22">
-                <Label.GestureRecognizers>
+                <Image.GestureRecognizers>
                     <TapGestureRecognizer
-                        Tapped="GoToProgramGuide" />
-                </Label.GestureRecognizers>
-            </Label>
+                        Tapped="GoToProgramGuide"
+                        NumberOfTapsRequired="1"/>
+                </Image.GestureRecognizers>
+            </Image>
             <Image  Source="exploring_faith.png"
                     Grid.Row="6"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand">
-            </Image>
-            <Label  Text="Exploring Faith"
-                    Grid.Row="6"
-                    HorizontalTextAlignment="Center"
-                    VerticalTextAlignment="Center"
-                    TextColor="White"
-                    FontSize="22">
-                <Label.GestureRecognizers>
+                <Image.GestureRecognizers>
                     <TapGestureRecognizer
-                        Tapped="GoToExploringFaith" />
-                </Label.GestureRecognizers>
-            </Label>
+                        Tapped="GoToExploringFaith"
+                        NumberOfTapsRequired="1"/>
+                </Image.GestureRecognizers>
+            </Image>
             <Image  Source="donations.png"
                     Grid.Row="7"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand">
-            </Image>
-            <Label  Text="Donations"
-                    Grid.Row="7"
-                    HorizontalTextAlignment="Center"
-                    VerticalTextAlignment="Center"
-                    TextColor="White"
-                    FontSize="22">
-                <Label.GestureRecognizers>
+                <Image.GestureRecognizers>
                     <TapGestureRecognizer
-                        Tapped="GoToDonations" />
-                </Label.GestureRecognizers>
-            </Label>
+                        Tapped="GoToDonations"
+                        NumberOfTapsRequired="1"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Label Text="test"
+                   Grid.Row="8"/>
         </Grid>
     </ScrollView>
 

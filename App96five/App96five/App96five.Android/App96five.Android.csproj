@@ -75,6 +75,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
   </ItemGroup>
@@ -95,22 +96,28 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\whats_on.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\donations.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\exploring_faith.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\listen_now.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\podcasts.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\program_guide.png" />
+    <ProjectReference Include="..\App96five\App96five.csproj">
+      <Project>{531398c8-7f95-4db1-8966-896ea54adb0a}</Project>
+      <Name>App96five</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\youtube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\instagram.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\social_media.png" />
@@ -119,10 +126,16 @@
     <AndroidResource Include="Resources\drawable\song_finder.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\App96five\App96five.csproj">
-      <Project>{531398c8-7f95-4db1-8966-896ea54adb0a}</Project>
-      <Name>App96five</Name>
-    </ProjectReference>
+    <AndroidResource Include="Resources\drawable\whats_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\exploring_faith.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\listen_now.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\program_guide.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
