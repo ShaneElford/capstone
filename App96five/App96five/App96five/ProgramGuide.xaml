@@ -4,9 +4,10 @@
              x:Class="App96five.ProgramGuide">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Program Guides page! under construction"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Image  Source="programs_official.png"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+            </Image>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
