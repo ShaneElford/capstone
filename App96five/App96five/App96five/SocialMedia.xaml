@@ -4,7 +4,7 @@
              x:Class="App96five.SocialMedia">
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                 <Image  Source="facebook.png">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer
@@ -20,7 +20,7 @@
                     </Image.GestureRecognizers>
                 </Image>
             </StackLayout>
-            <StackLayout Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                 <Image  Source="instagram.png">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer
@@ -36,7 +36,7 @@
                     </Image.GestureRecognizers>
                 </Image>
             </StackLayout>
-            <StackLayout Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                 <Button Text="Call"
                         Clicked="Call"/>
                 <Button Text="Email"
