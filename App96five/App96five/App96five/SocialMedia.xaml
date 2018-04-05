@@ -3,45 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App96five.SocialMedia">
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                <Image  Source="facebook.png">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer
-                            Tapped="GoToFacebook"
-                            NumberOfTapsRequired="1"/>
-                    </Image.GestureRecognizers>
-                </Image>
-                <Image  Source="twitter.png">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer
-                            Tapped="GoToTwitter"
-                            NumberOfTapsRequired="1"/>
-                    </Image.GestureRecognizers>
-                </Image>
+        <ScrollView Margin="0" Padding="0">
+            <StackLayout Margin="0" Padding="0">
+                <Button  x:Name="FbBtn" ContentLayout="Top,0" 
+                         BackgroundColor="White" Image="fblogo.png"  
+                         HorizontalOptions="FillAndExpand" 
+                         Clicked="GoToFacebook" />
+                <Button  x:Name="IgBtn" ContentLayout="Top,0" 
+                         BackgroundColor="White" Image="IGlogo.png"  
+                         HorizontalOptions="FillAndExpand" 
+                         Clicked="GoToInstagram" />
+                <Button  x:Name="TwBtn" ContentLayout="Top,0" 
+                         BackgroundColor="White" Image="TwLogo.png"  
+                         HorizontalOptions="FillAndExpand" 
+                         Clicked="GoToTwitter" />
+                <Button  x:Name="UtBtn" ContentLayout="Top,0" 
+                         BackgroundColor="White" Image="UtLogo.png"  
+                         HorizontalOptions="FillAndExpand" 
+                         Clicked="GoToYoutube" />
             </StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                <Image  Source="instagram.png">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer
-                            Tapped="GoToInstagram"
-                            NumberOfTapsRequired="1"/>
-                    </Image.GestureRecognizers>
-                </Image>
-                <Image  Source="youtube.png">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer
-                                Tapped="GoToYoutube"
-                                NumberOfTapsRequired="1"/>
-                    </Image.GestureRecognizers>
-                </Image>
-            </StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                <Button Text="Call"
-                        Clicked="Call"/>
-                <Button Text="Email"
-                        Clicked="Email"/>
-            </StackLayout>
-        </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
