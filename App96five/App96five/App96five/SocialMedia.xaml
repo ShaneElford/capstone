@@ -5,22 +5,42 @@
     <ContentPage.Content>
         <ScrollView Margin="0" Padding="0">
             <StackLayout Margin="0" Padding="0">
-                <Button  x:Name="FbBtn" ContentLayout="Top,0" 
-                         BackgroundColor="White" Image="fblogo.png"  
-                         HorizontalOptions="FillAndExpand" 
-                         Clicked="GoToFacebook" />
-                <Button  x:Name="IgBtn" ContentLayout="Top,0" 
-                         BackgroundColor="White" Image="IGlogo.png"  
-                         HorizontalOptions="FillAndExpand" 
-                         Clicked="GoToInstagram" />
-                <Button  x:Name="TwBtn" ContentLayout="Top,0" 
-                         BackgroundColor="White" Image="TwLogo.png"  
-                         HorizontalOptions="FillAndExpand" 
-                         Clicked="GoToTwitter" />
-                <Button  x:Name="UtBtn" ContentLayout="Top,0" 
-                         BackgroundColor="White" Image="UtLogo.png"  
-                         HorizontalOptions="FillAndExpand" 
-                         Clicked="GoToYoutube" />
+                <Image  Source="fblogo2.png"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                    Tapped="GoToFacebook"
+                    NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image  Source="Iglogo2.png"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                    Tapped="GoToInstagram"
+                    NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image  Source="Utlogo2.png"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                    Tapped="GoToYoutube"
+                    NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <Image  Source="Twlogo2.png"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                    Tapped="GoToTwitter"
+                    NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>
