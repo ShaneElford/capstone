@@ -19,17 +19,26 @@
                 </Grid>
             <StackLayout Orientation="Horizontal"
                          HorizontalOptions="CenterAndExpand">
-                <BoxView    Color="Black"
+                <ListView x:Name="Display_96five">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding now.title}" Detail="{Binding now.artist}"></TextCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+<!--                 <BoxView    Color="Black"
                             WidthRequest="100"
                             HeightRequest="100"
                             VerticalOptions="Center"
                             HorizontalOptions="Center"/>
+
                 <StackLayout HorizontalOptions="CenterAndExpand">
                     <Label Text="Viva La Vida"
                        FontSize="Medium"/>
                     <Label  Text="Coldplay"
                         FontSize="Small"/>
                 </StackLayout>
+                                -->
             </StackLayout>
 
 
