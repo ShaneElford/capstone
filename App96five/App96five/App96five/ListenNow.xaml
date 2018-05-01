@@ -19,14 +19,14 @@
                 </Grid>
             <StackLayout Orientation="Horizontal"
                          HorizontalOptions="CenterAndExpand">
-                <ListView x:Name="Display_96five">
+                <ListView x:Name="now_96five">
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <TextCell Text="{Binding now.title}" Detail="{Binding now.artist}"></TextCell>
+                            <ImageCell ImageSource="{Binding now.albumart_url}" Text="{Binding now.title}" Detail="{Binding now.artist}"></ImageCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
-<!--                 <BoxView    Color="Black"
+                <!--                 <BoxView    Color="Black"
                             WidthRequest="100"
                             HeightRequest="100"
                             VerticalOptions="Center"

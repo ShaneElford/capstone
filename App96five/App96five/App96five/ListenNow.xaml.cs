@@ -58,7 +58,7 @@ namespace App96five
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ListenNow : ContentPage
     {
-        private const string station_96five = "http://onair.hopemedia.com.au/api/station.php?station=hope1032&recent=false";
+        private const string station_96five = "http://onair.hopemedia.com.au/api/station.php?station=hope1032";
         private HttpClient _Client = new HttpClient();
         private ObservableCollection<Station> _station;
 
@@ -73,7 +73,7 @@ namespace App96five
             var content2 = "[" + content + "]";
             var station = JsonConvert.DeserializeObject<List<Station>>(content2);
             _station = new ObservableCollection<Station>(station);
-            Display_96five.ItemsSource = _station;
+            now_96five.ItemsSource = _station;
             base.OnAppearing();
         }
 
