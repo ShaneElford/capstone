@@ -5,61 +5,290 @@
     <ContentPage.Content>
         <StackLayout>
             <Grid>
-                    <Label Text="96five"
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Button Text="96five"
                        HorizontalOptions="FillAndExpand"
                        BackgroundColor="PaleGoldenrod"
                        Grid.Column="0"
                        Grid.ColumnSpan="4"
-                       VerticalTextAlignment="Center"
-                       HorizontalTextAlignment="Center"/>
-                    <Button Text=">"
+                       Clicked="Select96Five"/>
+                <Button Text=">"
                         HorizontalOptions="CenterAndExpand"
                         Grid.Column="4"
                         Clicked="Play96Five"/>
-                </Grid>
-            <StackLayout Orientation="Horizontal"
-                         HorizontalOptions="CenterAndExpand">
-                <BoxView    Color="Black"
-                            WidthRequest="100"
-                            HeightRequest="100"
-                            VerticalOptions="Center"
-                            HorizontalOptions="Center"/>
-                <StackLayout HorizontalOptions="CenterAndExpand">
-                    <Label Text="Viva La Vida"
-                       FontSize="Medium"/>
-                    <Label  Text="Coldplay"
-                        FontSize="Small"/>
-                </StackLayout>
-            </StackLayout>
-
-
+            </Grid>
+            <ListView x:Name="now_96five" HasUnevenRows="True" VerticalOptions="FillAndExpand" IsVisible="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Margin="5, 5, 0, 0">
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                                    <Image HeightRequest="75" WidthRequest="75">
+                                        <Image.Source>
+                                            <UriImageSource Uri="{Binding recent[0].albumart_url}"/>
+                                        </Image.Source>
+                                    </Image>
+                                    <StackLayout VerticalOptions="Center">
+                                        <Label Text="{Binding recent[0].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                        <Label Text="{Binding recent[0].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                    </StackLayout>
+                                </StackLayout>
+                                <Label Text="Recently Played" FontFamily="Montserrat" FontAttributes="Bold" TextColor="Black"/>
+                                <BoxView HeightRequest="2" HorizontalOptions="FillAndExpand" BackgroundColor="Black"></BoxView>
+                                <StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,5">
+                                        <Image HeightRequest="75" WidthRequest="75">
+                                            <Image.Source>
+                                                <UriImageSource Uri="{Binding recent[1].albumart_url}"/>
+                                            </Image.Source>
+                                        </Image>
+                                        <StackLayout VerticalOptions="Center">
+                                            <Label Text="{Binding recent[1].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                            <Label Text="{Binding recent[1].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,5">
+                                        <Image HeightRequest="75" WidthRequest="75">
+                                            <Image.Source>
+                                                <UriImageSource Uri="{Binding recent[2].albumart_url}"/>
+                                            </Image.Source>
+                                        </Image>
+                                        <StackLayout VerticalOptions="Center">
+                                            <Label Text="{Binding recent[2].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                            <Label Text="{Binding recent[2].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,5">
+                                        <Image HeightRequest="75" WidthRequest="75">
+                                            <Image.Source>
+                                                <UriImageSource Uri="{Binding recent[3].albumart_url}"/>
+                                            </Image.Source>
+                                        </Image>
+                                        <StackLayout VerticalOptions="Center">
+                                            <Label Text="{Binding recent[3].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                            <Label Text="{Binding recent[3].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,5">
+                                        <Image HeightRequest="75" WidthRequest="75">
+                                            <Image.Source>
+                                                <UriImageSource Uri="{Binding recent[4].albumart_url}"/>
+                                            </Image.Source>
+                                        </Image>
+                                        <StackLayout VerticalOptions="Center">
+                                            <Label Text="{Binding recent[4].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                            <Label Text="{Binding recent[4].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,5">
+                                        <Image HeightRequest="75" WidthRequest="75">
+                                            <Image.Source>
+                                                <UriImageSource Uri="{Binding recent[5].albumart_url}"/>
+                                            </Image.Source>
+                                        </Image>
+                                        <StackLayout VerticalOptions="Center">
+                                            <Label Text="{Binding recent[5].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                            <Label Text="{Binding recent[5].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
             <Grid>
-                <Label Text="Inspire Digital"
-                       HorizontalOptions="FillAndExpand"
-                       BackgroundColor="PaleVioletRed"
-                       Grid.Column="0"
-                       Grid.ColumnSpan="4"
-                       VerticalTextAlignment="Center"
-                       HorizontalTextAlignment="Center"/>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Button Text="Inspire Digital"
+                   HorizontalOptions="FillAndExpand"
+                   BackgroundColor="PaleVioletRed"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="4"
+                   Clicked="SelectInspire"/>
                 <Button Text=">"
                         HorizontalOptions="CenterAndExpand"
                         Grid.Column="4"
                         Clicked="PlayInspire"/>
             </Grid>
-            
+            <ListView x:Name="now_inspire" HasUnevenRows="True" VerticalOptions="FillAndExpand" IsVisible="False">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Margin="5, 5, 0, 0">
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                                    <Image HeightRequest="75" WidthRequest="75">
+                                        <Image.Source>
+                                            <UriImageSource Uri="{Binding recent[0].albumart_url}"/>
+                                        </Image.Source>
+                                    </Image>
+                                    <StackLayout VerticalOptions="Center">
+                                        <Label Text="{Binding recent[0].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                        <Label Text="{Binding recent[0].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                    </StackLayout>
+                                </StackLayout>
+                                <Label Text="Recently Played" FontFamily="Montserrat" FontAttributes="Bold" TextColor="Black"/>
+                                <BoxView HeightRequest="2" HorizontalOptions="FillAndExpand" BackgroundColor="Black"></BoxView>
+                                <StackLayout>
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,5">
+                                            <Image HeightRequest="75" WidthRequest="75">
+                                                <Image.Source>
+                                                    <UriImageSource Uri="{Binding recent[1].albumart_url}"/>
+                                                </Image.Source>
+                                            </Image>
+                                            <StackLayout VerticalOptions="Center">
+                                                <Label Text="{Binding recent[1].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                                <Label Text="{Binding recent[1].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,5">
+                                            <Image HeightRequest="75" WidthRequest="75">
+                                                <Image.Source>
+                                                    <UriImageSource Uri="{Binding recent[2].albumart_url}"/>
+                                                </Image.Source>
+                                            </Image>
+                                            <StackLayout VerticalOptions="Center">
+                                                <Label Text="{Binding recent[2].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                                <Label Text="{Binding recent[2].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,5">
+                                            <Image HeightRequest="75" WidthRequest="75">
+                                                <Image.Source>
+                                                    <UriImageSource Uri="{Binding recent[3].albumart_url}"/>
+                                                </Image.Source>
+                                            </Image>
+                                            <StackLayout VerticalOptions="Center">
+                                                <Label Text="{Binding recent[3].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                                <Label Text="{Binding recent[3].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,5">
+                                            <Image HeightRequest="75" WidthRequest="75">
+                                                <Image.Source>
+                                                    <UriImageSource Uri="{Binding recent[4].albumart_url}"/>
+                                                </Image.Source>
+                                            </Image>
+                                            <StackLayout VerticalOptions="Center">
+                                                <Label Text="{Binding recent[4].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                                <Label Text="{Binding recent[4].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,5">
+                                            <Image HeightRequest="75" WidthRequest="75">
+                                                <Image.Source>
+                                                    <UriImageSource Uri="{Binding recent[5].albumart_url}"/>
+                                                </Image.Source>
+                                            </Image>
+                                            <StackLayout VerticalOptions="Center">
+                                                <Label Text="{Binding recent[5].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                                <Label Text="{Binding recent[5].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
             <Grid>
-                <Label Text="Fresh Radio"
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Button Text="Fresh Radio"
                        HorizontalOptions="FillAndExpand"
                        BackgroundColor="PaleTurquoise"
                        Grid.Column="0"
                        Grid.ColumnSpan="4"
-                       VerticalTextAlignment="Center"
-                       HorizontalTextAlignment="Center"/>
+                       Clicked="SelectFresh"/>
                 <Button Text=">"
                         HorizontalOptions="CenterAndExpand"
                         Grid.Column="4"
                         Clicked="PlayFresh"/>
             </Grid>
+            <ListView x:Name="now_fresh" HasUnevenRows="True" VerticalOptions="FillAndExpand" IsVisible="False">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Margin="5, 5, 0, 0">
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                                    <Image HeightRequest="75" WidthRequest="75">
+                                        <Image.Source>
+                                            <UriImageSource Uri="{Binding recent[0].albumart_url}"/>
+                                        </Image.Source>
+                                    </Image>
+                                    <StackLayout VerticalOptions="Center">
+                                        <Label Text="{Binding recent[0].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                        <Label Text="{Binding recent[0].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                    </StackLayout>
+                                </StackLayout>
+                                <Label Text="Recently Played" FontFamily="Montserrat" FontAttributes="Bold" TextColor="Black"/>
+                                <BoxView HeightRequest="2" HorizontalOptions="FillAndExpand" BackgroundColor="Black"></BoxView>
+                                <StackLayout>
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,5">
+                                            <Image HeightRequest="75" WidthRequest="75">
+                                                <Image.Source>
+                                                    <UriImageSource Uri="{Binding recent[1].albumart_url}"/>
+                                                </Image.Source>
+                                            </Image>
+                                            <StackLayout VerticalOptions="Center">
+                                                <Label Text="{Binding recent[1].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                                <Label Text="{Binding recent[1].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,5">
+                                            <Image HeightRequest="75" WidthRequest="75">
+                                                <Image.Source>
+                                                    <UriImageSource Uri="{Binding recent[2].albumart_url}"/>
+                                                </Image.Source>
+                                            </Image>
+                                            <StackLayout VerticalOptions="Center">
+                                                <Label Text="{Binding recent[2].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                                <Label Text="{Binding recent[2].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,5">
+                                            <Image HeightRequest="75" WidthRequest="75">
+                                                <Image.Source>
+                                                    <UriImageSource Uri="{Binding recent[3].albumart_url}"/>
+                                                </Image.Source>
+                                            </Image>
+                                            <StackLayout VerticalOptions="Center">
+                                                <Label Text="{Binding recent[3].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                                <Label Text="{Binding recent[3].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,5">
+                                            <Image HeightRequest="75" WidthRequest="75">
+                                                <Image.Source>
+                                                    <UriImageSource Uri="{Binding recent[4].albumart_url}"/>
+                                                </Image.Source>
+                                            </Image>
+                                            <StackLayout VerticalOptions="Center">
+                                                <Label Text="{Binding recent[4].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                                <Label Text="{Binding recent[4].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,5">
+                                            <Image HeightRequest="75" WidthRequest="75">
+                                                <Image.Source>
+                                                    <UriImageSource Uri="{Binding recent[5].albumart_url}"/>
+                                                </Image.Source>
+                                            </Image>
+                                            <StackLayout VerticalOptions="Center">
+                                                <Label Text="{Binding recent[5].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                                <Label Text="{Binding recent[5].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
             <Button Text="Stop"
                     Clicked="Stop"/>
         </StackLayout>

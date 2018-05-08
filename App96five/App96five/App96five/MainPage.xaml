@@ -8,8 +8,8 @@
             <Image  Source="listen_now.png"
                 HorizontalOptions="FillAndExpand"
                 VerticalOptions="FillAndExpand">
-            <Image.GestureRecognizers>
-                <TapGestureRecognizer
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
                     Tapped="GoToListenNow"
                     NumberOfTapsRequired="1"/>
                 </Image.GestureRecognizers>
@@ -32,21 +32,12 @@
                         NumberOfTapsRequired="1"/>
                 </Image.GestureRecognizers>
             </Image>
-            <Image  Source="social_media.png"
+            <Image  Source="donations.png"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand">
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer
-                        Tapped="GoToSocialMedia"
-                        NumberOfTapsRequired="1"/>
-                </Image.GestureRecognizers>
-            </Image>
-            <Image  Source="whats_on.png"
-                    HorizontalOptions="FillAndExpand"
-                    VerticalOptions="FillAndExpand">
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer
-                        Tapped="GoToWhatsOn"
+                        Tapped="GoToDonations"
                         NumberOfTapsRequired="1"/>
                 </Image.GestureRecognizers>
             </Image>
@@ -68,15 +59,24 @@
                         NumberOfTapsRequired="1"/>
                 </Image.GestureRecognizers>
             </Image>
-            <Image  Source="donations.png"
+            <Image  Source="social_media.png"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand">
-            <Image.GestureRecognizers>
-                <TapGestureRecognizer
-                        Tapped="GoToDonations"
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="GoToSocialMedia"
                         NumberOfTapsRequired="1"/>
-            </Image.GestureRecognizers>
-        </Image>
+                </Image.GestureRecognizers>
+            </Image>
+            <Image  Source="whats_on.png"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="GoToWhatsOn"
+                        NumberOfTapsRequired="1"/>
+                </Image.GestureRecognizers>
+            </Image>
         </StackLayout>
     </ScrollView>
 
