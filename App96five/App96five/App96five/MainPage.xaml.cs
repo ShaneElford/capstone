@@ -34,9 +34,9 @@ namespace App96five
             await Navigation.PushAsync(new SocialMedia { Title = "Social Media" });
         }
 
-        async void GoToWhatsOn(object sender, EventArgs e)
+        private void GoToWhatsOn(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new WhatsOn { Title = "What's On" });
+            Device.OpenUri(new Uri("https://www.96five.com/noticeboard/"));
         }
 
         async void GoToProgramGuide(object sender, EventArgs e)
@@ -44,14 +44,18 @@ namespace App96five
             await Navigation.PushAsync(new ProgramGuide { Title = "Program Guide" });
         }
 
-        async void GoToExploringFaith(object sender, EventArgs e)
+        //async void GoToExploringFaith(object sender, EventArgs e)
+        //{
+        //await Navigation.PushAsync(new ExploringFaith { Title = "Exploring Faith" });
+        //}
+        private void GoToExploringFaith(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ExploringFaith { Title = "Exploring Faith" });
+            Device.OpenUri(new Uri("http://www.bible.com/bible"));
         }
 
-        async void GoToDonations(object sender, EventArgs e)
+        private void GoToDonations(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Donations { Title = "Donations" });
+        Device.OpenUri(new Uri("http://96five.com/donate"));
         }
 
         async void OnPreviousPageButtonClicked(object sender, EventArgs e)
