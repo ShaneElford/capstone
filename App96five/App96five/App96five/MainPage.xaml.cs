@@ -44,9 +44,13 @@ namespace App96five
             await Navigation.PushAsync(new ProgramGuide { Title = "Program Guide" });
         }
 
-        async void GoToExploringFaith(object sender, EventArgs e)
+        //async void GoToExploringFaith(object sender, EventArgs e)
+        //{
+        //await Navigation.PushAsync(new ExploringFaith { Title = "Exploring Faith" });
+        //}
+        private void GoToExploringFaith(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ExploringFaith { Title = "Exploring Faith" });
+            Device.OpenUri(new Uri("http://www.bible.com/bible"));
         }
 
         private void GoToDonations(object sender, EventArgs e)
