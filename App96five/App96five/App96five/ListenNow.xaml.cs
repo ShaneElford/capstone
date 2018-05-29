@@ -34,7 +34,7 @@ namespace App96five
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ListenNow : ContentPage
     {
-        private const string station_96five = "http://onair.hopemedia.com.au/api/station.php?station=hope1032&now=false&show=false";
+        private const string station_96five = "http://onair.hopemedia.com.au/api/station.php?station=fresh&now=false&show=false";
         private const string station_inspire = "http://onair.hopemedia.com.au/api/station.php?station=inspiredigital&now=false&show=false";
         private const string station_fresh = "http://onair.hopemedia.com.au/api/station.php?station=fresh&now=false&show=false";
         private HttpClient _Client = new HttpClient();
