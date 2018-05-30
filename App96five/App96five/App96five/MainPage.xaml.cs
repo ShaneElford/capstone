@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Plugin.Connectivity;
 
 namespace App96five
 {
@@ -16,7 +17,14 @@ namespace App96five
         }
         async void GoToListenNow(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ListenNow { Title = "Listen Now" });
+            if (NetworkCheck.IsInternet())
+            {
+                await Navigation.PushAsync(new ListenNow { Title = "Listen Now" });
+            }
+            else
+            {
+                await DisplayAlert("96Five", "Please be aware this app requires an internet connection to run correctly", "OK");
+            }
         }
 
         async void GoToSongFinder(object sender, EventArgs e)
@@ -44,10 +52,6 @@ namespace App96five
             await Navigation.PushAsync(new ProgramGuide { Title = "Program Guide" });
         }
 
-        //async void GoToExploringFaith(object sender, EventArgs e)
-        //{
-        //await Navigation.PushAsync(new ExploringFaith { Title = "Exploring Faith" });
-        //}
         private void GoToExploringFaith(object sender, EventArgs e)
         {
             Device.OpenUri(new Uri("http://www.bible.com/bible"));
