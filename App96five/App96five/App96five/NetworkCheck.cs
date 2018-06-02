@@ -10,6 +10,7 @@ namespace App96five
 {
     public class NetworkCheck
     {
+        public static string errorMessage = "testerror";
         public static bool IsInternet()
         {
             bool returnValue = false;

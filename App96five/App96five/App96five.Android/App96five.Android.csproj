@@ -32,8 +32,7 @@
     <AndroidSupportedAbis />
     <AndroidHttpClientHandlerType>
     </AndroidHttpClientHandlerType>
-    <AndroidTlsProvider>
-    </AndroidTlsProvider>
+    <AndroidTlsProvider>btls</AndroidTlsProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
