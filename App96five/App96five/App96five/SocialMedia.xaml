@@ -3,44 +3,52 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App96five.SocialMedia">
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                <Image  Source="facebook.png">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer
+        <StackLayout Margin="10">
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Label 
+                   TextColor="Black" 
+                   FontSize="Medium"
+                   Text="As this city's family radio station, we see ourselves as having a commitment and responsibility to our listeners to broadcast ENGAGING radio content that ADDS VALUE and is SUITABLE for the entire family...... which makes 96five so different across the FM dial."/>
+            </StackLayout>
+            <StackLayout VerticalOptions="EndAndExpand">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Image  Source="facebook.png" WidthRequest="80">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer
                             Tapped="GoToFacebook"
                             NumberOfTapsRequired="1"/>
-                    </Image.GestureRecognizers>
-                </Image>
-                <Image  Source="twitter.png">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image  Source="twitter.png" WidthRequest="80">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer
                             Tapped="GoToTwitter"
                             NumberOfTapsRequired="1"/>
-                    </Image.GestureRecognizers>
-                </Image>
-            </StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                <Image  Source="instagram.png">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image  Source="instagram.png" WidthRequest="80">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer
                             Tapped="GoToInstagram"
                             NumberOfTapsRequired="1"/>
-                    </Image.GestureRecognizers>
-                </Image>
-                <Image  Source="youtube.png">
-                    <Image.GestureRecognizers>
-                        <TapGestureRecognizer
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Image  Source="youtube.png" WidthRequest="80">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer
                                 Tapped="GoToYoutube"
                                 NumberOfTapsRequired="1"/>
-                    </Image.GestureRecognizers>
-                </Image>
-            </StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                <Button Text="Call"
-                        Clicked="Call"/>
-                <Button Text="Email"
-                        Clicked="Email"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Button Text="Call"
+                        Clicked="Call"
+                        WidthRequest="165"/>
+                    <Button Text="Email"
+                        Clicked="Email"
+                        WidthRequest="165"/>
+                </StackLayout>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
