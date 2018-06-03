@@ -68,7 +68,7 @@ namespace App96five
             }
             else
             {
-                await DisplayAlert("No Internet", NetworkCheck.errorMessage, "OK");
+                await DisplayAlert("96Five", NetworkCheck.errorMessage, "OK");
             }
             base.OnAppearing();
         }

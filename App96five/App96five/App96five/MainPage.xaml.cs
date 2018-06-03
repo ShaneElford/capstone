@@ -15,16 +15,10 @@ namespace App96five
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
         }
+
         async void GoToListenNow(object sender, EventArgs e)
         {
-            if (NetworkCheck.IsInternet())
-            {
-                await Navigation.PushAsync(new ListenNow { Title = "Listen Now" });
-            }
-            else
-            {
-                await DisplayAlert("96Five", "Please be aware this app requires an internet connection to run correctly", "OK");
-            }
+            await Navigation.PushAsync(new ListenNow { Title = "Listen Now" });
         }
 
         async void GoToSongFinder(object sender, EventArgs e)
