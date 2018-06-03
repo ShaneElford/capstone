@@ -4,9 +4,274 @@
              x:Class="App96five.SongFinder">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Song Finder page! under construction"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Entry Placeholder="Enter search query" Completed="songSearch"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Button Text="96five"
+                       HorizontalOptions="FillAndExpand"
+                       BackgroundColor="PaleGoldenrod"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="4"
+                       Clicked="Select96Five"/>
+            </Grid>
+            <ListView x:Name="display_96five" HasUnevenRows="True" VerticalOptions="FillAndExpand" IsVisible="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Margin="5, 5, 0, 0">
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                                    <Image HeightRequest="75" WidthRequest="75">
+                                        <Image.Source>
+                                            <UriImageSource Uri="{Binding tracks[0].albumart_url}"/>
+                                        </Image.Source>
+                                    </Image>
+                                    <StackLayout VerticalOptions="Center">
+                                        <Label Text="{Binding tracks[0].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                        <Label Text="{Binding tracks[0].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                    </StackLayout>
+                                </StackLayout>
+                                <StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,5">
+                                        <Image HeightRequest="75" WidthRequest="75">
+                                            <Image.Source>
+                                                <UriImageSource Uri="{Binding tracks[1].albumart_url}"/>
+                                            </Image.Source>
+                                        </Image>
+                                        <StackLayout VerticalOptions="Center">
+                                            <Label Text="{Binding tracks[1].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                            <Label Text="{Binding tracks[1].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,5">
+                                        <Image HeightRequest="75" WidthRequest="75">
+                                            <Image.Source>
+                                                <UriImageSource Uri="{Binding tracks[2].albumart_url}"/>
+                                            </Image.Source>
+                                        </Image>
+                                        <StackLayout VerticalOptions="Center">
+                                            <Label Text="{Binding tracks[2].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                            <Label Text="{Binding tracks[2].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,5">
+                                        <Image HeightRequest="75" WidthRequest="75">
+                                            <Image.Source>
+                                                <UriImageSource Uri="{Binding tracks[3].albumart_url}"/>
+                                            </Image.Source>
+                                        </Image>
+                                        <StackLayout VerticalOptions="Center">
+                                            <Label Text="{Binding tracks[3].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                            <Label Text="{Binding tracks[3].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,5">
+                                        <Image HeightRequest="75" WidthRequest="75">
+                                            <Image.Source>
+                                                <UriImageSource Uri="{Binding tracks[4].albumart_url}"/>
+                                            </Image.Source>
+                                        </Image>
+                                        <StackLayout VerticalOptions="Center">
+                                            <Label Text="{Binding tracks[4].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                            <Label Text="{Binding tracks[4].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,5">
+                                        <Image HeightRequest="75" WidthRequest="75">
+                                            <Image.Source>
+                                                <UriImageSource Uri="{Binding tracks[5].albumart_url}"/>
+                                            </Image.Source>
+                                        </Image>
+                                        <StackLayout VerticalOptions="Center">
+                                            <Label Text="{Binding tracks[5].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                            <Label Text="{Binding tracks[5].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Button Text="Inspire Digital"
+                   HorizontalOptions="FillAndExpand"
+                   BackgroundColor="PaleVioletRed"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="4"
+                   Clicked="SelectInspire"/>
+            </Grid>
+            <ListView x:Name="display_inspire" HasUnevenRows="True" VerticalOptions="FillAndExpand" IsVisible="False">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Margin="5, 5, 0, 0">
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                                    <Image HeightRequest="75" WidthRequest="75">
+                                        <Image.Source>
+                                            <UriImageSource Uri="{Binding tracks[0].albumart_url}"/>
+                                        </Image.Source>
+                                    </Image>
+                                    <StackLayout VerticalOptions="Center">
+                                        <Label Text="{Binding tracks[0].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                        <Label Text="{Binding tracks[0].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                    </StackLayout>
+                                </StackLayout>
+                                <StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,5">
+                                        <Image HeightRequest="75" WidthRequest="75">
+                                            <Image.Source>
+                                                <UriImageSource Uri="{Binding tracks[1].albumart_url}"/>
+                                            </Image.Source>
+                                        </Image>
+                                        <StackLayout VerticalOptions="Center">
+                                            <Label Text="{Binding tracks[1].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                            <Label Text="{Binding tracks[1].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,5">
+                                        <Image HeightRequest="75" WidthRequest="75">
+                                            <Image.Source>
+                                                <UriImageSource Uri="{Binding tracks[2].albumart_url}"/>
+                                            </Image.Source>
+                                        </Image>
+                                        <StackLayout VerticalOptions="Center">
+                                            <Label Text="{Binding tracks[2].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                            <Label Text="{Binding tracks[2].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,5">
+                                        <Image HeightRequest="75" WidthRequest="75">
+                                            <Image.Source>
+                                                <UriImageSource Uri="{Binding tracks[3].albumart_url}"/>
+                                            </Image.Source>
+                                        </Image>
+                                        <StackLayout VerticalOptions="Center">
+                                            <Label Text="{Binding tracks[3].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                            <Label Text="{Binding tracks[3].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,5">
+                                        <Image HeightRequest="75" WidthRequest="75">
+                                            <Image.Source>
+                                                <UriImageSource Uri="{Binding tracks[4].albumart_url}"/>
+                                            </Image.Source>
+                                        </Image>
+                                        <StackLayout VerticalOptions="Center">
+                                            <Label Text="{Binding tracks[4].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                            <Label Text="{Binding tracks[4].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,5">
+                                        <Image HeightRequest="75" WidthRequest="75">
+                                            <Image.Source>
+                                                <UriImageSource Uri="{Binding tracks[5].albumart_url}"/>
+                                            </Image.Source>
+                                        </Image>
+                                        <StackLayout VerticalOptions="Center">
+                                            <Label Text="{Binding tracks[5].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                            <Label Text="{Binding tracks[5].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Button Text="Fresh Radio"
+                       HorizontalOptions="FillAndExpand"
+                       BackgroundColor="PaleTurquoise"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="4"
+                       Clicked="SelectFresh"/>
+            </Grid>
+            <ListView x:Name="display_fresh" HasUnevenRows="True" VerticalOptions="FillAndExpand" IsVisible="False">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Margin="5, 5, 0, 0">
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                                    <Image HeightRequest="75" WidthRequest="75">
+                                        <Image.Source>
+                                            <UriImageSource Uri="{Binding tracks[0].albumart_url}"/>
+                                        </Image.Source>
+                                    </Image>
+                                    <StackLayout VerticalOptions="Center">
+                                        <Label Text="{Binding tracks[0].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                        <Label Text="{Binding tracks[0].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                    </StackLayout>
+                                </StackLayout>
+                                <StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,5">
+                                        <Image HeightRequest="75" WidthRequest="75">
+                                            <Image.Source>
+                                                <UriImageSource Uri="{Binding tracks[1].albumart_url}"/>
+                                            </Image.Source>
+                                        </Image>
+                                        <StackLayout VerticalOptions="Center">
+                                            <Label Text="{Binding tracks[1].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                            <Label Text="{Binding tracks[1].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,5">
+                                        <Image HeightRequest="75" WidthRequest="75">
+                                            <Image.Source>
+                                                <UriImageSource Uri="{Binding tracks[2].albumart_url}"/>
+                                            </Image.Source>
+                                        </Image>
+                                        <StackLayout VerticalOptions="Center">
+                                            <Label Text="{Binding tracks[2].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                            <Label Text="{Binding tracks[2].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,5">
+                                        <Image HeightRequest="75" WidthRequest="75">
+                                            <Image.Source>
+                                                <UriImageSource Uri="{Binding tracks[3].albumart_url}"/>
+                                            </Image.Source>
+                                        </Image>
+                                        <StackLayout VerticalOptions="Center">
+                                            <Label Text="{Binding tracks[3].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                            <Label Text="{Binding tracks[3].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,5">
+                                        <Image HeightRequest="75" WidthRequest="75">
+                                            <Image.Source>
+                                                <UriImageSource Uri="{Binding tracks[4].albumart_url}"/>
+                                            </Image.Source>
+                                        </Image>
+                                        <StackLayout VerticalOptions="Center">
+                                            <Label Text="{Binding tracks[4].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                            <Label Text="{Binding tracks[4].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand" Margin="0,5">
+                                        <Image HeightRequest="75" WidthRequest="75">
+                                            <Image.Source>
+                                                <UriImageSource Uri="{Binding tracks[5].albumart_url}"/>
+                                            </Image.Source>
+                                        </Image>
+                                        <StackLayout VerticalOptions="Center">
+                                            <Label Text="{Binding tracks[5].title}" TextColor="Black" FontAttributes="Bold" FontFamily="Montserrat"/>
+                                            <Label Text="{Binding tracks[5].artist}" TextColor="Gray" FontFamily="Montserrat"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
