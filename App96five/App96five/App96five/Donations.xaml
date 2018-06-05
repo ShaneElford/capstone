@@ -5,13 +5,7 @@
              BackgroundColor="#E6E6E6">
     <ContentPage.Content>
         <StackLayout>
-            <Image x:Name="MyImage" />
-            <Label Text="Thank you for helping contribute to 96five!"
-                HorizontalOptions="CenterAndExpand" />
-            <Button HeightRequest ="80" WidthRequest ="160" BackgroundColor="Maroon" TextColor="White" FontSize="Large" Text="Donate" Clicked="Redict">
-             
-            </Button>
-           
+            <WebView x:Name="DonationDisplay" HeightRequest="1000"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

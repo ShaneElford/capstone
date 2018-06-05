@@ -4,9 +4,39 @@
              x:Class="App96five.Podcasts">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Podcasts page! under construction"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <StackLayout Orientation="Horizontal" BackgroundColor="LightGray" IsVisible="True" x:Name="GoodMorning">
+                <Image Source="GoodMorning.png" WidthRequest="160"/>
+                <Label Text="It's a Good Morning with Ken, Nicky &amp; Steve" FontSize="Medium" FontFamily="Montserrat" Margin="10" TextColor="Black" VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+            <ScrollView Orientation="Vertical" HeightRequest="1000" IsVisible="False" x:Name="GoodMorningView">
+                <StackLayout HeightRequest="550">
+                <Grid HeightRequest="550">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <WebView Grid.Row="0" x:Name="GoodMorning_01" HeightRequest="200"/>
+                        <WebView Grid.Row="1" x:Name="GoodMorning_02" HeightRequest="200"/>
+                    </Grid>
+                    
+                </StackLayout>
+            </ScrollView>
+            <StackLayout Orientation="Horizontal" BackgroundColor="LightGray" IsVisible="True">
+                <Image Source="FamilyWorship.png" WidthRequest="160"/>
+                <Label Text="Family Worship" FontSize="Medium" FontFamily="Montserrat" Margin="10" TextColor="Black" VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" BackgroundColor="LightGray" IsVisible="True">
+                <Image Source="LifeWords.png" WidthRequest="160"/>
+                <Label Text="LifeWords Q&amp;A with David Reay" FontSize="Medium" FontFamily="Montserrat" Margin="10" TextColor="Black" VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" BackgroundColor="LightGray" IsVisible="True">
+                <Image Source="OpenHouse.png" WidthRequest="160"/>
+                <Label Text="Open House Interviews with Stephen O'Doherty" FontSize="Medium" FontFamily="Montserrat" Margin="10" TextColor="Black" VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" BackgroundColor="LightGray" IsVisible="True">
+                <Image Source="TalkingLife.png" WidthRequest="160"/>
+                <Label Text="Talking Life with Peter Janetski" FontSize="Medium" FontFamily="Montserrat" Margin="10" TextColor="Black" VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

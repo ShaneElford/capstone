@@ -51,9 +51,9 @@ namespace App96five
             Device.OpenUri(new Uri("http://www.bible.com/bible"));
         }
 
-        private void GoToDonations(object sender, EventArgs e)
+        async void GoToDonations(object sender, EventArgs e)
         {
-        Device.OpenUri(new Uri("http://96five.com/donate"));
+            await Navigation.PushAsync(new Donations { Title = "Donations" });
         }
 
         async void OnPreviousPageButtonClicked(object sender, EventArgs e)
