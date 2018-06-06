@@ -143,9 +143,6 @@
     <AndroidResource Include="Resources\drawable\exploring_faith.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\programs_official.png" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\OpenHouse.jpg" />
   </ItemGroup>
   <ItemGroup>
