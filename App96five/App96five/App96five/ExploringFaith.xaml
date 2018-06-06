@@ -4,9 +4,7 @@
              x:Class="App96five.ExploringFaith">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Exploring faith page! Under construction"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <WebView x:Name="BibleDisplay" HeightRequest="1000"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

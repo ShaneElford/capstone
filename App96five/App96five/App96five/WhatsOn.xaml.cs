@@ -15,6 +15,8 @@ namespace App96five
 		public WhatsOn ()
 		{
 			InitializeComponent ();
-		}
+            WhatsOnDisplay.Source = "https://www.96five.com/noticeboard/";
+
+        }
 	}
 }

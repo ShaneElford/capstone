@@ -15,6 +15,7 @@ namespace App96five
 		public ExploringFaith ()
 		{
 			InitializeComponent ();
+            BibleDisplay.Source = "https://www.bible.com/en-GB/bible";
 		}
 	}
 }

@@ -4,9 +4,7 @@
              x:Class="App96five.WhatsOn">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="What's on page! under construction"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <WebView x:Name="WhatsOnDisplay" HeightRequest="1000"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
