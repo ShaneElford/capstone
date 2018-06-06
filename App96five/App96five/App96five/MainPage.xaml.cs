@@ -13,7 +13,7 @@ namespace App96five
         public MainPage()
         {
             InitializeComponent();
-            NavigationPage.SetHasNavigationBar(this, false);
+            NavigationPage.SetTitleIcon(this, "banner.png");
         }
 
         async void GoToListenNow(object sender, EventArgs e)
