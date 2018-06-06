@@ -4,10 +4,83 @@
              x:Class="App96five.ProgramGuide">
     <ContentPage.Content>
         <StackLayout>
-            <Image  Source="programs_official.png"
-                HorizontalOptions="FillAndExpand"
-                VerticalOptions="FillAndExpand">
-            </Image>
+            <StackLayout Orientation="Horizontal" BackgroundColor="LightGray">
+                <Image Source="a.png" WidthRequest="160"/>
+                <StackLayout>
+                    <Label Text="Breakfast with Ken, Nicky &amp; Steve" FontSize="Medium" FontFamily="Montserrat" Margin="10" TextColor="Black" VerticalOptions="CenterAndExpand"/>
+                    <Label Text="Weekdays 6am - 10am" FontSize="Small" FontFamily="Montserrat" Margin="10" TextColor="Black" VerticalOptions="CenterAndExpand"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" BackgroundColor="LightGray">
+                <Image Source="b.png" WidthRequest="160"/>
+                <StackLayout>
+                    <Label Text="Mornings with Tim Bain" FontSize="Medium" FontFamily="Montserrat" Margin="10" TextColor="Black" VerticalOptions="CenterAndExpand"/>
+                    <Label Text="Weekdays 10am - 12pm" FontSize="Small" FontFamily="Montserrat" Margin="10" TextColor="Black" VerticalOptions="CenterAndExpand"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" BackgroundColor="LightGray">
+                <Image Source="c.png" WidthRequest="160"/>
+                <StackLayout>
+                    <Label Text="Afternoons with Timothy Charles" FontSize="Medium" FontFamily="Montserrat" Margin="10" TextColor="Black" VerticalOptions="CenterAndExpand"/>
+                    <Label Text="Weekdays 12pm - 3pm" FontSize="Small" FontFamily="Montserrat" Margin="10" TextColor="Black" VerticalOptions="CenterAndExpand"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" BackgroundColor="LightGray">
+                <Image Source="d.png" WidthRequest="160"/>
+                <StackLayout>
+                    <Label Text="Luke &amp; Suzie backseat drivers" FontSize="Medium" FontFamily="Montserrat" Margin="10" TextColor="Black" VerticalOptions="CenterAndExpand"/>
+                    <Label Text="Weekdays 3pm - 6pm" FontSize="Small" FontFamily="Montserrat" Margin="10" TextColor="Black" VerticalOptions="CenterAndExpand"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" BackgroundColor="LightGray">
+                <Image Source="g.png" WidthRequest="160"/>
+                <StackLayout>
+                    <Label Text="Life Matters with Ben Windle" FontSize="Medium" FontFamily="Montserrat" Margin="10" TextColor="Black" VerticalOptions="CenterAndExpand"/>
+                    <Label Text="Sundays 5am" FontSize="Small" FontFamily="Montserrat" Margin="10" TextColor="Black" VerticalOptions="CenterAndExpand"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" BackgroundColor="LightGray">
+                <Image Source="e.png" WidthRequest="160"/>
+                <StackLayout>
+                    <Label Text="Sunday Celebration" FontSize="Medium" FontFamily="Montserrat" Margin="10" TextColor="Black" VerticalOptions="CenterAndExpand"/>
+                    <Label Text="Sundays 6am - 9am" FontSize="Small" FontFamily="Montserrat" Margin="10" TextColor="Black" VerticalOptions="CenterAndExpand"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" BackgroundColor="LightGray">
+                <Image Source="f.png" WidthRequest="160"/>
+                <StackLayout>
+                    <Label Text="Family Worship" FontSize="Medium" FontFamily="Montserrat" Margin="10" TextColor="Black" VerticalOptions="CenterAndExpand"/>
+                    <Label Text="Sundays 9am" FontSize="Small" FontFamily="Montserrat" Margin="10" TextColor="Black" VerticalOptions="CenterAndExpand"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" BackgroundColor="LightGray">
+                <Image Source="h.png" WidthRequest="160"/>
+                <StackLayout>
+                    <Label Text="Real Faith with Eric Skattebo" FontSize="Medium" FontFamily="Montserrat" Margin="10" TextColor="Black" VerticalOptions="CenterAndExpand"/>
+                    <Label Text="Sundays 9.30am" FontSize="Small" FontFamily="Montserrat" Margin="10" TextColor="Black" VerticalOptions="CenterAndExpand"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" BackgroundColor="LightGray">
+                <Image Source="i.png" WidthRequest="160"/>
+                <StackLayout>
+                    <Label Text="Seven News Simulcast" FontSize="Medium" FontFamily="Montserrat" Margin="10" TextColor="Black" VerticalOptions="CenterAndExpand"/>
+                    <Label Text="Every day 6pm" FontSize="Small" FontFamily="Montserrat" Margin="10" TextColor="Black" VerticalOptions="CenterAndExpand"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" BackgroundColor="LightGray">
+                <Image Source="j.png" WidthRequest="160"/>
+                <StackLayout>
+                    <Label Text="Focus on the Family" FontSize="Medium" FontFamily="Montserrat" Margin="10" TextColor="Black" VerticalOptions="CenterAndExpand"/>
+                    <Label Text="Weekdays 10.30pm" FontSize="Small" FontFamily="Montserrat" Margin="10" TextColor="Black" VerticalOptions="CenterAndExpand"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" BackgroundColor="LightGray">
+                <Image Source="k.png" WidthRequest="160"/>
+                <StackLayout>
+                    <Label Text="Insights for Living with Chuck Swindoll" FontSize="Medium" FontFamily="Montserrat" Margin="10" TextColor="Black" VerticalOptions="CenterAndExpand"/>
+                    <Label Text="Weekdays 5am" FontSize="Small" FontFamily="Montserrat" Margin="10" TextColor="Black" VerticalOptions="CenterAndExpand"/>
+                </StackLayout>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
