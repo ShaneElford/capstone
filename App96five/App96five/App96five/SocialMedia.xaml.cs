@@ -70,7 +70,7 @@ namespace App96five
 
         void Email(object sender, EventArgs e)
         {
-            Device.OpenUri(new Uri("mailto:email@email.com"));
+            Device.OpenUri(new Uri("mailto:contact@96five.com"));
         }
 
     }

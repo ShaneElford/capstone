@@ -82,6 +82,7 @@ namespace App96five
 
         async void Play96Five()
         {
+            await CrossMediaManager.Current.Stop();
             await CrossMediaManager.Current.Play("http://stream2.cnmns.net/96five-mp3");
         }
         public void SelectInspire()
@@ -93,6 +94,7 @@ namespace App96five
 
         async void PlayInspire()
         {
+            await CrossMediaManager.Current.Stop();
             await CrossMediaManager.Current.Play("http://stream2.cnmns.net/inspire-mp3");
         }
         public void SelectFresh()
@@ -104,6 +106,7 @@ namespace App96five
 
         async void PlayFresh()
         {
+            await CrossMediaManager.Current.Stop();
             await CrossMediaManager.Current.Play("http://stream2.cnmns.net/fresh-mp3");
         }
 
