@@ -73,5 +73,10 @@ namespace App96five
             Device.OpenUri(new Uri("mailto:contact@96five.com"));
         }
 
+        void CallCompetition(object sender, EventArgs e)
+        {
+            Device.OpenUri(new Uri("tel:1300965965"));
+        }
+
     }
 }

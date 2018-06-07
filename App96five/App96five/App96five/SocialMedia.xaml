@@ -49,6 +49,9 @@
                         Clicked="Email"
                         WidthRequest="165"/>
                 </StackLayout>
+                <Button Text="Call Competition Line"
+                        Clicked="CallCompetition"
+                        WidthRequest="320"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
